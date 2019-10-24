@@ -1,0 +1,177 @@
+.title5 a{
+  color: #212529;
+}
+.pic {
+  top: 15%;
+  width: 90px;
+  height: 90px;
+}
+
+.title3 {
+  font-size: 24px;
+  color: #222831;
+  font-weight: bold;
+  margin-top: 17px;
+  height: 90px;
+  letter-spacing: 1px;
+}
+
+.title4 {
+  font-size: 18px;
+  color: #222831;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.bottom {
+  color: white;
+  background-color: #0B253F;
+  padding: 30px 0;
+}
+
+.bottomTitle {
+  font-size: 1.1rem;
+  padding-top: 5px;
+}
+
+.bottomPic {
+  width: 60px;
+  height: auto;
+}
+
+.bottomTitle1 {
+  padding-top: 15px;
+  font-size: 1rem;
+}
+
+.contact-title {
+  padding-top: 15px;
+  font-size: 1.5rem;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 5%;
+}
+
+.pic2 {
+  width: 100%;
+  height: 13rem;
+}
+
+.title5 {
+  padding: 15px 10px;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.title6 {
+  color: #5c5757;
+  font-size: 16px;
+  text-align: justify;
+  letter-spacing: 1px;
+  padding: 0 10px;
+}
+
+/* 平板 */
+@media (min-width: 426px) and (max-width: 814px) {
+  .pic {
+    top: 15%;
+    width: 80px;
+    height: 80px;
+  }
+
+  .title3 {
+    height: 80px;
+    padding-top: 30px;
+  }
+
+  .pic2 {
+    height: 10.5rem;
+  }
+
+  .title5 {
+    padding-top: 0.5rem;
+    font-size: 1.3rem;
+  }
+
+  .title6 {
+    font-size: 1rem;
+  }
+
+  .contact-title {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 1.8rem;
+    float: left;
+  }
+  .NewsButton {
+    border: 0;
+    background-color: #222831;
+    color: #fff;
+    border-radius: 10px;
+    float: right;
+  }
+}
+
+/* 手機直 */
+@media (max-width: 425px) {
+  .title3 {
+    font-size: 20px;
+    height: 50px;
+    padding-top: 15px;
+  }
+
+  .title4 {
+    font-size: 15px;
+  }
+
+  .title5 {
+    padding-top: 0.5rem;
+    font-size: 0.35rem;
+    color: #222831;
+    font-weight: bold;
+  }
+
+  .title6 {
+    padding-top: 0.8rem;
+    font-size: 0.05rem;
+    color: #393E46;
+  }
+
+  .bottomTitle {
+    font-size: 14px;
+  }
+
+  .bottomTitle1 {
+    font-size: 0.4rem;
+  }
+
+  .bottomPic {
+    width: 50px;
+  }
+
+  .Introduction {
+    max-width: 270px;
+  }
+  .NewsButton {
+    border: 0;
+    background-color: #222831;
+    color: #fff;
+    border-radius: 10px;
+    float: right;
+  }
+}
+
+@media (max-width: 375px) {
+  .IT {
+    min-width: 270px;
+  }
+  .NewsButton {
+    border: 0;
+    background-color: #222831;
+    color: #fff;
+    border-radius: 10px;
+    float: right;
+  }
+}
