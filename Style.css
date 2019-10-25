@@ -547,18 +547,3 @@ ul li {
     margin-top: 10px;
   }
 }
-
-@media (min-width: 1440px) {
-  .entity .reason.left .reason-inner .text {
-    margin-top: 30px;
-    float: left;
-    width: 50vw;
-    min-height: 350px;
-    padding: 20px;
-  }
-  .entity .reason.left .reason-inner .image {
-    float: left;
-    width: 50vw;
-    padding: 20px;
-  }
-}
