@@ -99,6 +99,7 @@ header {
 .entity {
   background-color: rgba(247, 247, 247, 1);
   overflow: auto;
+  width: 100vw;
 }
 
 .entity .reason {
