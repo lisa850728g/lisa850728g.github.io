@@ -86,40 +86,16 @@ $data=mysqli_query($con, "select * from News order by art_date DESC");
                 //使用者input切割字串跟title的切割字串＆content的切割字串，可以直接用array下去比對，沒有input直接全部顯示，有input顯示搜結果
             ?>
         </div>
-        <?php
-        $count_match = 0;
-        for ($i=1;$i<=mysqli_num_rows($data);$i++) {
-            $News=mysqli_fetch_array($data);
-            for ($j=0;$j<count($user_input);$j++) {
-                if (preg_match("/\b". $user_input[$j] ."\b/i", $News['title'])) {
-                    $count_match+=1; ?>
                     <div>
                         <div id="News">
-                            <img src="<?php echo $News['pic']; ?>" style="max-width:100%;height:auto;">
                         </div>
                         <div class="NewsWord">
-                            <p class="NewsTitle" style=""><?php echo $News['title']; ?></p>
-                            <div class="date"><?php echo $News['art_date'] . " | " . $News['tag']; ?></div>
-                            <br>
-                            <div class="NewsContent" style=""><?php echo mb_strimwidth(strip_tags($News['content']), 0, 250, "...", "UTF-8"); ?></div>
-                            <button class="NewsButton" style="width:70px;height:30px;"><?php echo "<a href=\"NewsContent.php?id=".$News['id']."\">More</button></a>"?>
+                            <p class="NewsTitle" style="">Taiwan’s NDC Says Government-Backed Project for Startups Has “Delivered Concrete Results”</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
                     <div style="background-color: #222831;height: 5px;margin-top: 18px;"></div>
 
-                <?php
-                break;
-                } else {
-                }
-            }
-        }
-        if ($count_match==0) {
-            echo "<h3>No Results Found</h3>
-            <p>The page you requested could not be found. Try refining your search, or use the navigation above to locate the post.</p>";
-            //echo "No matching articles";
-        }
-        ?>
         <div class="page">
         <?php
         $previous_page = $page-1;
